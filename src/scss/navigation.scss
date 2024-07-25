@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+.navigation{
+  display: none;
+  padding: 0 16px;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  overflow-x: hidden;
+  margin-bottom: 24px;
+}
+
+.navigation__item {
+  font-size: 16px;
+  color: $grayColor;
+  height: 40px;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__text{
+  margin: 8px 9px 8px 16px;
+}
+
+.navigation__item_active {
+  border: 2px solid $activeSwiperCardColor;
+  border-radius: 6px;
+  background-color: $white;
+}
+
+.navigation__image {
+  max-width: 100%;
+  max-height: 308px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 1120px) {
+  .navigation {
+    display: block;
+  }
+
+  .navigation__list {
+    flex-wrap: wrap;
+  }
+}
+

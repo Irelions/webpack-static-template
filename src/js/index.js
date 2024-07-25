@@ -1,3 +1,6 @@
-import '../scss/style.scss'
+import './script.js';
+import './swiper.js';
+import './menu.js';
+import './modal.js';
 
-console.log('Works!')
+import '../scss/style.scss';

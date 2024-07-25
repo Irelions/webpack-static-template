@@ -1,0 +1,98 @@
+@import "variables.scss";
+
+.modal__container {
+  background: $white;
+  padding: 32px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100%;
+  box-shadow: 30px -30px 50px 20px $grayColor;
+  z-index: 10;
+}
+
+.modal-menu__close {
+  margin-bottom: 40px;
+}
+
+.modal__cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba($white, 0.9);
+  z-index: 5;
+}
+
+.modal__header {
+  font-size: 24px;
+  color: $textColor;
+  margin-bottom: 24px;
+}
+
+.modal__input {
+  width: 100%;
+  height: 48px;
+  color: $grayColor;
+  font-size: 16px;
+  border: 2px solid $bgColor;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.modal__message textarea {
+  font-family: inherit;
+  resize: none;
+  height: 118px;
+}
+
+.modal__description {
+  margin-bottom: 16px;
+}
+
+.modal__description > span {
+  color: $buttonColor;
+}
+
+.modal_button {
+  position: absolute;
+  right: 32px;
+}
+
+.modal__header::after{
+  content: "";
+  position: absolute;
+  align-self: center;
+  top: 110px;
+  left: 0;
+  display: block;
+  height: 40px;
+  width: 0;
+  border-right: 4px solid $activeLinkColor;
+  border-bottom-right-radius: 4px;
+}
+
+
+@media(min-width: 768px){
+
+  .modal__container {
+    width: 440px;
+  }
+
+  .modal-menu__close {
+    position: absolute;
+    top: 32px;
+    left: -72px;
+  }
+  .modal__header::after {
+    top: 28px;
+  }
+
+
+
+
+}
+
+
