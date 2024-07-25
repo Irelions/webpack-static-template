@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+.footer {
+  background: $bgColor;
+  color: $grayColor;
+  padding: 16px 24px;
+  text-align: center;
+}
+
+.footer div:nth-child(1n) {
+  margin-bottom: 16px;
+}
+
+@media(min-width: 768px){
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer div:nth-child(1n) {
+    width: 33%;
+  }
+
+  .footer div:first-child {
+    text-align: left;
+  }
+  .footer div:last-child {
+    text-align: right;
+  }
+}

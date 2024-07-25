@@ -1,17 +1,12 @@
-$bgColor: #24292e;
-$text: #fff;
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import "container.scss";
+@import "header.scss";
+@import "main.scss";
+@import "navigation.scss";
+@import "card.scss";
+@import "more.scss";
+@import "equipment.scss";
+@import "mobile_menu.scss";
+@import "brand.scss";
+@import "footer.scss";
+@import "price.scss";
+@import "modal_phone.scss";

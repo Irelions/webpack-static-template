@@ -1,0 +1,80 @@
+@import "variables.scss";
+
+.equipment__item {
+  width: 240px;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid $borderBrandColor;
+  border-radius: 2px;
+  background: $white;
+}
+
+.equipment__card {
+  position: relative;
+  font-size: 16px;
+  height: 160px;
+  width: 240px;
+}
+.equipment__enter {
+  position: absolute;
+  top: 86px;
+  left: 166px;
+}
+
+.equipment__content {
+  display: none;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background: $bgColor;
+}
+
+.equipment__item-list {
+  display: flex;
+  gap: 16px 24px;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.equipment__show-hide {
+  display: flex;
+  gap: 9px;
+  justify-content: left;
+  color: #1B1C21;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.equipment__show-hide:hover {
+  cursor: pointer;
+}
+
+@media(min-width: 768px){
+  .equipment__content {
+    display: block;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 34px;
+  }
+
+  .equipment__hidden {
+    overflow: hidden;
+    max-height: 175px;
+  }
+  .equipment__hidden {
+    overflow: hidden;
+    max-height: 175px;
+  }
+
+}
+
+@media(min-width: 1120px){
+  .equipment__content {
+    display: block;
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-bottom: 34px;
+  }
+}
